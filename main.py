@@ -22,18 +22,19 @@ def gfg():
              f"email:{email}\n"
                  f"Subject:{email}\n"
              f"subject:{subject}\n")
+       return redirect("http://rahuldev.atwebpages.com/")
 
 
-       my_email = "rahulbhardwaj930@gmail.com"
-       password = "fastandfurious8"
+#        my_email = "rahulbhardwaj930@gmail.com"
+#        password = "fastandfurious8"
        
        
-       connection = smtplib.SMTP("smtp.gmail.com")
-       connection.starttls()
-       connection.login(user=my_email, password=password)
-       connection.sendmail(from_addr=my_email, to_addrs="rahulbhardwaj8851046@gmail.com",msg=message)
+#        connection = smtplib.SMTP("smtp.gmail.com")
+#        connection.starttls()
+#        connection.login(user=my_email, password=password)
+#        connection.sendmail(from_addr=my_email, to_addrs="rahulbhardwaj8851046@gmail.com",msg=message)
        
-       connection.close
+#        connection.close
 
     return render_template("index.html")
 
